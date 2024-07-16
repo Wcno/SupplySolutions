@@ -1,0 +1,7 @@
+/build/
+conf/
+oracle_data/
+target/
+docker-compose.yaml
+pom.xml
+commands.sql

@@ -1,0 +1,91 @@
+/*Contiene el contenido principal de la pagina*/
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+main {
+  padding: 32px 64px;
+}
+
+input[type="text"],
+input[type="date"] {
+  background-color: white;
+}
+
+.busqueda-principal {
+  margin: 16px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+/*Contenedor que contiene el input de busqueda y su respectivo icono*/
+.cont-barra-busqueda {
+  position: relative;
+}
+
+/*Contiene a todos los elementos de cada form, respectivamente*/
+.form-group {
+  display: flex;
+  gap: 8px;
+}
+
+.barra-busqueda {
+  padding-left: 40px !important;
+  min-width: 300px;
+}
+
+.icono-busqueda {
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.216);
+}
+
+/*Contiene a todos los elementos select filtros de la pagina*/
+.barra-filtros {
+  display: flex;
+  column-gap: 10px;
+}
+
+.filtros-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+  justify-content: end;
+}
+
+.filtro-row {
+  width: 100%;
+}
+
+.fecha-input::placeholder {
+  color: black;
+}
+
+.form-group select {
+  background-color: white;
+}
+
+.barra-filtros .form-group {
+  flex: 1;
+}
+.fecha-input {
+  width: 75%;
+}
+
+.barra-ordenamiento {
+  display: flex;
+  column-gap: 10px;
+}
+
+.btn-restablecer {
+  margin: 5px 0;
+}

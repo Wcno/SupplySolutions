@@ -1,0 +1,124 @@
+/*
+  El proposito de este archivo es resetear los defaults y proveer estilos consistente
+  en los distintos navegadores así proveyendonos más control y libertad a la hora de
+  diseñar nuestros components
+*/
+
+/* Font inter para los textos porque se ve mas lindo */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Font Noto Serif para los titulos */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+/* Font Raleway para los formularios */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+:root {
+  --heading-font-family: "Noto Serif";
+  --form-font-family: "Raleway";
+  --text-font-family: "Inter", sans-serif;
+  --primary-color: #f59e0b;
+  --primary-color-dark: #d97706;
+  --primary-color-extra-dark: #451a03;
+  --body-color: #fef3c7;
+  --text-color: #111827;
+  --muted-color: #9ca3af;
+  --border-color: #d1d5db;
+  --border-color-light: #e5e7eb;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+form {
+  font-family: var(--form-font-family);
+  color: var(--primary-color-extra-dark);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+
+body {
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+button {
+  appearance: button;
+}
+
+ol,
+ul,
+menu {
+  /* Se ve feo el estilo de lista default */
+  list-style: "";
+}
+
+textarea {
+  resize: vertical;
+}
+
+::placeholder {
+  opacity: 1;
+  /* Combinamos el color actual del elemento con transparencia para proveer un versión apagada el */
+  color: color-mix(in srgb, currentColor 50%, transparent);
+}
+
+:disabled {
+  cursor: default;
+}
+
+img,
+svg,
+video {
+  /* Usualmente se trabajan como bloques */
+  display: block;
+}
+
+svg {
+  /* Para que sea del mismo color que el texto */
+  fill: currentColor;
+}
+
+img,
+video {
+  /* Mantiene las proporciones */
+  max-width: 100%;
+  height: auto;
+}

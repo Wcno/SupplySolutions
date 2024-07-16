@@ -1,0 +1,130 @@
+/*principal: #f59e0b
+principal oscuro: #ca8a04
+principal claro: #facc15
+principal palido: #fef3c7*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--body-color);
+}
+
+/*Css para el section del body*/
+.setcion_conteiner {
+  display: flex;
+}
+
+/*Css para los div que esta adentro del section_container*/
+.div_container {
+  display: flex;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  font-family: "Arial";
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+/*Id para la imagen mecanico del login que esta adentro del section_container*/
+.img_mecanico {
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  display: block; /* Añadir display: block para que las márgenes funcionen correctamente */
+}
+
+/*Id para el div de iniciar del login que esta adentro del section_container*/
+.iniciar-sesion-container {
+  background-color: var(--body-color);
+  border-radius: 20px;
+  width: 600px;
+  padding: 20px;
+}
+
+/*Css para la palabra Bienvenido*/
+.bienvenido {
+  font-size: 30px;
+  margin-top: 0.5px;
+  margin-bottom: 2px;
+}
+
+/*Css para el div que contiene el boton mecanico y cliente*/
+
+.user-type {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+/*Css para los botones de usuarios*/
+.cliente-btn {
+  background-color: #afafaf;
+  border: 2px solid #ccc;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.mecanico-btn {
+  background-color: #efefef;
+  border: 2px solid #ccc;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+form .fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  background: white;
+}
+
+/*Css para meter el usuario y el password*/
+.input-usuario-contr {
+  font-family: arial;
+  font-size: 15px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  max-width: 420px;
+}
+
+a {
+  color: var(--primary-color-dark);
+  text-decoration: underline;
+  transition: color 200ms ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.btn {
+  margin-top: 4px;
+  width: 100%;
+}
+
+.forgot-password,
+.register-link {
+  font-size: 0.875rem;
+}

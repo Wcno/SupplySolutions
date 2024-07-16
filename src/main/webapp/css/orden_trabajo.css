@@ -1,0 +1,39 @@
+h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+main {
+  padding: 32px 64px;
+}
+
+.table-wrapper {
+  padding: 16px 0px;
+}
+
+.div-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+select {
+  background-color: white;
+}
+
+input {
+  background-color: white;
+  min-width: 300px;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: end;
+}
+
+.no-records {
+  text-align: center;
+}

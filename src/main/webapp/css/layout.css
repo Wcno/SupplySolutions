@@ -1,0 +1,146 @@
+body {
+  background-color: var(--body-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > main {
+  flex: 1;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10000px;
+  overflow: hidden;
+}
+
+.topbar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 0 2.5rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem 1.5rem;
+  border-bottom: var(--border-color-light) 1px solid;
+}
+
+.banner .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.banner .icon svg {
+  color: var(--muted-color);
+  height: 100%;
+  transition: color 200ms ease-in-out;
+}
+
+.banner .icon svg:hover {
+  color: var(--primary-color);
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 200ms ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.035);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.035);
+}
+
+.bottombar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.1);
+  padding: 0 2.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-bottom: var(--border-color-light) 1px solid;
+}
+
+.menu .menu-link {
+  transition: color 200ms ease-in-out;
+}
+
+.menu .menu-link:hover {
+  color: var(--primary-color);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.logout .icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  color: inherit;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 200ms ease-in-out;
+}
+
+.logout:hover {
+  color: var(--primary-color);
+}
+
+.logo-header {
+  height: 2rem;
+  width: 2rem;
+}
+
+.logo-header img {
+  width: 100%;
+  height: auto;
+}
